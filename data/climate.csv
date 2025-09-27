@@ -1,0 +1,551 @@
+Country,Year,CO2,Temperature
+India,2014,1.4,25.87
+India,2015,9.32,13.38
+India,2016,7.61,14.16
+India,2017,3.87,10.67
+India,2018,2.61,27.79
+India,2019,6.53,28.58
+India,2020,3.94,25.58
+India,2021,5.9,27.18
+India,2022,3.5,24.4
+India,2023,5.12,18.8
+India,2024,5.6,20.92
+United States,2014,1.06,13.07
+United States,2015,6.59,16.44
+United States,2016,9.42,16.34
+United States,2017,2.39,26.71
+United States,2018,1.77,16.02
+United States,2019,3.14,22.27
+United States,2020,3.0,10.19
+United States,2021,7.32,21.31
+United States,2022,1.54,22.96
+United States,2023,6.45,28.38
+United States,2024,4.47,28.55
+China,2014,8.68,14.15
+China,2015,8.67,13.96
+China,2016,4.85,20.71
+China,2017,2.92,26.08
+China,2018,9.6,23.64
+China,2019,2.4,15.54
+China,2020,6.66,11.45
+China,2021,10.0,27.57
+China,2022,5.13,23.56
+China,2023,7.58,13.37
+China,2024,6.62,21.24
+Brazil,2014,4.66,16.89
+Brazil,2015,3.15,18.08
+Brazil,2016,4.14,26.17
+Brazil,2017,2.3,27.44
+Brazil,2018,2.93,11.62
+Brazil,2019,7.77,25.33
+Brazil,2020,7.04,11.94
+Brazil,2021,9.03,27.04
+Brazil,2022,9.87,15.31
+Brazil,2023,8.25,24.92
+Brazil,2024,3.73,23.2
+United Kingdom,2014,3.02,26.23
+United Kingdom,2015,9.63,26.52
+United Kingdom,2016,4.58,22.73
+United Kingdom,2017,9.76,20.17
+United Kingdom,2018,7.97,29.5
+United Kingdom,2019,6.44,27.37
+United Kingdom,2020,9.97,17.12
+United Kingdom,2021,2.53,25.85
+United Kingdom,2022,5.84,27.02
+United Kingdom,2023,1.86,24.78
+United Kingdom,2024,3.03,26.41
+Germany,2014,9.79,11.84
+Germany,2015,4.17,10.84
+Germany,2016,5.25,20.38
+Germany,2017,4.21,25.8
+Germany,2018,1.63,16.12
+Germany,2019,8.87,27.73
+Germany,2020,6.82,12.22
+Germany,2021,1.88,21.07
+Germany,2022,2.03,27.31
+Germany,2023,2.36,24.57
+Germany,2024,8.95,11.82
+France,2014,9.59,16.74
+France,2015,1.39,12.85
+France,2016,4.49,26.37
+France,2017,1.11,14.33
+France,2018,3.63,29.35
+France,2019,6.1,14.81
+France,2020,9.26,10.78
+France,2021,2.39,22.08
+France,2022,9.74,26.84
+France,2023,9.54,15.77
+France,2024,2.15,15.61
+Russia,2014,1.47,16.95
+Russia,2015,7.09,17.85
+Russia,2016,5.78,27.6
+Russia,2017,1.78,25.12
+Russia,2018,4.28,10.22
+Russia,2019,1.07,23.73
+Russia,2020,2.59,22.42
+Russia,2021,5.91,27.02
+Russia,2022,5.88,19.86
+Russia,2023,8.09,29.28
+Russia,2024,1.39,18.1
+Japan,2014,2.56,15.64
+Japan,2015,1.72,11.94
+Japan,2016,9.09,26.85
+Japan,2017,2.53,10.05
+Japan,2018,4.64,15.58
+Japan,2019,8.42,11.52
+Japan,2020,3.63,22.29
+Japan,2021,5.84,10.7
+Japan,2022,3.08,22.73
+Japan,2023,6.54,29.42
+Japan,2024,2.39,16.04
+Canada,2014,3.56,19.77
+Canada,2015,2.01,22.87
+Canada,2016,1.53,26.7
+Canada,2017,9.81,16.81
+Canada,2018,2.75,23.42
+Canada,2019,7.9,19.28
+Canada,2020,5.45,19.82
+Canada,2021,7.93,23.89
+Canada,2022,8.9,18.65
+Canada,2023,4.57,17.27
+Canada,2024,5.54,11.08
+Australia,2014,6.16,20.76
+Australia,2015,9.46,23.1
+Australia,2016,5.2,16.2
+Australia,2017,3.02,15.75
+Australia,2018,9.5,20.64
+Australia,2019,9.5,17.84
+Australia,2020,9.51,16.09
+Australia,2021,7.85,25.71
+Australia,2022,5.79,28.05
+Australia,2023,8.27,10.68
+Australia,2024,8.15,28.29
+Italy,2014,4.37,17.73
+Italy,2015,5.25,11.27
+Italy,2016,9.24,26.57
+Italy,2017,7.23,14.83
+Italy,2018,2.08,28.27
+Italy,2019,3.96,12.61
+Italy,2020,5.17,11.92
+Italy,2021,5.58,24.27
+Italy,2022,6.28,20.02
+Italy,2023,7.82,10.83
+Italy,2024,3.95,12.34
+South Africa,2014,1.48,29.7
+South Africa,2015,7.14,17.68
+South Africa,2016,1.63,22.45
+South Africa,2017,9.2,20.44
+South Africa,2018,1.66,18.48
+South Africa,2019,3.82,10.75
+South Africa,2020,6.35,23.89
+South Africa,2021,7.07,19.72
+South Africa,2022,3.81,11.77
+South Africa,2023,4.6,12.03
+South Africa,2024,4.85,27.71
+Mexico,2014,4.58,16.28
+Mexico,2015,8.18,19.78
+Mexico,2016,2.8,27.11
+Mexico,2017,5.8,24.78
+Mexico,2018,9.41,21.15
+Mexico,2019,4.26,17.14
+Mexico,2020,4.94,12.86
+Mexico,2021,2.28,22.95
+Mexico,2022,6.13,13.54
+Mexico,2023,7.04,28.12
+Mexico,2024,4.3,19.77
+Saudi Arabia,2014,2.69,14.99
+Saudi Arabia,2015,1.59,23.2
+Saudi Arabia,2016,3.11,15.29
+Saudi Arabia,2017,4.99,28.94
+Saudi Arabia,2018,4.62,25.85
+Saudi Arabia,2019,4.94,28.95
+Saudi Arabia,2020,1.06,24.26
+Saudi Arabia,2021,9.3,24.63
+Saudi Arabia,2022,9.55,20.76
+Saudi Arabia,2023,4.63,24.06
+Saudi Arabia,2024,8.66,29.98
+Indonesia,2014,9.72,29.13
+Indonesia,2015,3.64,22.77
+Indonesia,2016,4.56,25.4
+Indonesia,2017,9.83,11.28
+Indonesia,2018,1.69,13.33
+Indonesia,2019,6.59,22.77
+Indonesia,2020,2.75,10.76
+Indonesia,2021,6.27,24.84
+Indonesia,2022,7.77,16.31
+Indonesia,2023,6.79,17.45
+Indonesia,2024,7.64,19.31
+Argentina,2014,1.17,25.97
+Argentina,2015,4.38,15.68
+Argentina,2016,5.93,10.81
+Argentina,2017,6.74,28.09
+Argentina,2018,8.08,17.68
+Argentina,2019,6.54,28.68
+Argentina,2020,6.01,18.73
+Argentina,2021,6.18,27.41
+Argentina,2022,7.38,17.94
+Argentina,2023,4.58,11.14
+Argentina,2024,9.54,21.57
+Nigeria,2014,6.75,18.54
+Nigeria,2015,5.5,26.28
+Nigeria,2016,2.74,25.42
+Nigeria,2017,8.92,13.81
+Nigeria,2018,5.05,22.8
+Nigeria,2019,3.9,17.28
+Nigeria,2020,8.45,12.39
+Nigeria,2021,6.43,23.4
+Nigeria,2022,4.25,24.44
+Nigeria,2023,7.16,14.63
+Nigeria,2024,1.01,24.46
+Egypt,2014,7.01,19.57
+Egypt,2015,3.48,16.69
+Egypt,2016,8.2,27.65
+Egypt,2017,6.94,10.66
+Egypt,2018,2.17,12.19
+Egypt,2019,7.64,22.78
+Egypt,2020,6.46,29.38
+Egypt,2021,7.65,19.33
+Egypt,2022,9.74,17.02
+Egypt,2023,2.41,23.46
+Egypt,2024,3.72,28.15
+Pakistan,2014,1.13,27.91
+Pakistan,2015,8.99,19.46
+Pakistan,2016,8.88,17.71
+Pakistan,2017,2.85,23.98
+Pakistan,2018,6.94,20.03
+Pakistan,2019,4.92,28.49
+Pakistan,2020,7.24,25.84
+Pakistan,2021,3.62,25.98
+Pakistan,2022,9.25,15.53
+Pakistan,2023,1.51,15.13
+Pakistan,2024,8.36,10.19
+Bangladesh,2014,9.91,14.56
+Bangladesh,2015,6.54,13.32
+Bangladesh,2016,5.53,23.31
+Bangladesh,2017,9.77,24.92
+Bangladesh,2018,1.47,27.89
+Bangladesh,2019,2.54,26.98
+Bangladesh,2020,2.2,22.86
+Bangladesh,2021,2.55,27.02
+Bangladesh,2022,4.0,23.15
+Bangladesh,2023,9.84,28.95
+Bangladesh,2024,5.36,24.49
+Vietnam,2014,5.71,25.41
+Vietnam,2015,8.71,26.74
+Vietnam,2016,8.14,26.07
+Vietnam,2017,9.62,19.61
+Vietnam,2018,8.32,12.2
+Vietnam,2019,6.77,10.85
+Vietnam,2020,5.87,10.26
+Vietnam,2021,7.97,23.95
+Vietnam,2022,6.02,16.93
+Vietnam,2023,6.44,11.44
+Vietnam,2024,9.39,20.3
+Turkey,2014,9.17,19.4
+Turkey,2015,5.63,24.87
+Turkey,2016,9.73,17.19
+Turkey,2017,2.06,23.13
+Turkey,2018,3.24,27.56
+Turkey,2019,3.0,11.98
+Turkey,2020,7.5,11.32
+Turkey,2021,1.96,10.71
+Turkey,2022,2.07,14.74
+Turkey,2023,6.83,12.48
+Turkey,2024,3.45,16.59
+Iran,2014,5.81,28.85
+Iran,2015,6.02,13.29
+Iran,2016,9.88,10.3
+Iran,2017,3.53,23.77
+Iran,2018,6.57,28.91
+Iran,2019,9.22,11.55
+Iran,2020,6.08,14.21
+Iran,2021,7.11,24.92
+Iran,2022,9.33,22.83
+Iran,2023,3.65,29.17
+Iran,2024,1.06,23.34
+Thailand,2014,9.17,12.05
+Thailand,2015,9.15,21.85
+Thailand,2016,2.54,15.62
+Thailand,2017,2.57,29.04
+Thailand,2018,8.88,28.42
+Thailand,2019,9.87,21.99
+Thailand,2020,1.68,28.69
+Thailand,2021,8.82,16.62
+Thailand,2022,4.42,21.64
+Thailand,2023,3.37,13.81
+Thailand,2024,8.35,18.19
+Spain,2014,8.91,25.72
+Spain,2015,7.7,10.5
+Spain,2016,2.48,11.99
+Spain,2017,8.41,29.18
+Spain,2018,1.57,14.31
+Spain,2019,4.82,11.63
+Spain,2020,9.86,18.02
+Spain,2021,6.86,15.51
+Spain,2022,6.58,23.18
+Spain,2023,2.81,23.02
+Spain,2024,8.58,20.84
+Ukraine,2014,9.78,15.29
+Ukraine,2015,4.63,26.88
+Ukraine,2016,2.2,15.74
+Ukraine,2017,7.15,26.19
+Ukraine,2018,4.07,13.82
+Ukraine,2019,1.01,15.59
+Ukraine,2020,8.74,20.89
+Ukraine,2021,6.83,19.11
+Ukraine,2022,8.8,21.14
+Ukraine,2023,2.91,27.95
+Ukraine,2024,7.65,29.83
+Poland,2014,6.88,11.91
+Poland,2015,3.66,28.61
+Poland,2016,8.9,16.12
+Poland,2017,2.64,13.24
+Poland,2018,7.26,11.85
+Poland,2019,3.97,20.74
+Poland,2020,9.01,16.54
+Poland,2021,5.77,20.52
+Poland,2022,7.64,14.84
+Poland,2023,9.31,14.41
+Poland,2024,1.95,17.66
+Malaysia,2014,7.2,26.6
+Malaysia,2015,7.67,10.63
+Malaysia,2016,4.98,25.33
+Malaysia,2017,9.36,10.86
+Malaysia,2018,4.2,17.38
+Malaysia,2019,1.83,11.7
+Malaysia,2020,6.81,15.32
+Malaysia,2021,8.01,27.26
+Malaysia,2022,8.24,16.67
+Malaysia,2023,3.89,27.35
+Malaysia,2024,2.72,11.9
+Colombia,2014,8.17,16.84
+Colombia,2015,3.74,23.61
+Colombia,2016,4.64,25.28
+Colombia,2017,3.73,27.46
+Colombia,2018,5.67,12.91
+Colombia,2019,3.16,16.22
+Colombia,2020,4.31,21.54
+Colombia,2021,6.4,18.01
+Colombia,2022,6.95,13.8
+Colombia,2023,5.4,29.37
+Colombia,2024,7.68,16.57
+Chile,2014,6.11,29.02
+Chile,2015,5.17,13.79
+Chile,2016,6.44,13.51
+Chile,2017,8.52,21.09
+Chile,2018,8.61,24.17
+Chile,2019,3.74,21.3
+Chile,2020,3.01,20.93
+Chile,2021,3.15,17.9
+Chile,2022,5.9,26.56
+Chile,2023,1.36,18.85
+Chile,2024,9.2,10.1
+Kenya,2014,6.79,20.56
+Kenya,2015,1.98,13.18
+Kenya,2016,6.93,18.56
+Kenya,2017,1.24,25.78
+Kenya,2018,2.26,11.28
+Kenya,2019,8.15,29.34
+Kenya,2020,7.4,10.91
+Kenya,2021,6.95,11.15
+Kenya,2022,3.49,23.04
+Kenya,2023,5.57,28.76
+Kenya,2024,3.5,23.2
+Peru,2014,9.31,14.38
+Peru,2015,4.18,11.5
+Peru,2016,1.53,16.91
+Peru,2017,4.81,29.9
+Peru,2018,1.15,18.38
+Peru,2019,2.35,20.69
+Peru,2020,8.93,28.03
+Peru,2021,6.39,27.99
+Peru,2022,4.48,15.69
+Peru,2023,2.7,27.34
+Peru,2024,8.85,19.18
+Morocco,2014,1.03,17.24
+Morocco,2015,8.3,27.22
+Morocco,2016,8.7,14.52
+Morocco,2017,8.02,29.37
+Morocco,2018,5.1,18.72
+Morocco,2019,2.54,20.2
+Morocco,2020,1.71,17.86
+Morocco,2021,6.24,29.04
+Morocco,2022,9.15,13.08
+Morocco,2023,3.14,24.08
+Morocco,2024,7.74,14.99
+Venezuela,2014,8.03,13.2
+Venezuela,2015,6.54,13.14
+Venezuela,2016,1.9,14.74
+Venezuela,2017,6.56,12.13
+Venezuela,2018,8.46,17.02
+Venezuela,2019,3.22,11.42
+Venezuela,2020,3.44,18.3
+Venezuela,2021,8.64,10.07
+Venezuela,2022,4.5,21.01
+Venezuela,2023,9.2,26.68
+Venezuela,2024,3.15,26.74
+Philippines,2014,2.94,15.07
+Philippines,2015,3.17,16.49
+Philippines,2016,1.4,28.28
+Philippines,2017,3.47,22.46
+Philippines,2018,5.06,24.02
+Philippines,2019,6.66,21.54
+Philippines,2020,6.61,15.09
+Philippines,2021,7.15,14.45
+Philippines,2022,2.44,18.94
+Philippines,2023,1.53,14.48
+Philippines,2024,5.28,12.73
+Netherlands,2014,8.19,13.01
+Netherlands,2015,1.36,27.48
+Netherlands,2016,9.26,17.86
+Netherlands,2017,9.07,25.54
+Netherlands,2018,1.86,23.55
+Netherlands,2019,7.24,13.14
+Netherlands,2020,2.9,12.56
+Netherlands,2021,8.43,18.31
+Netherlands,2022,2.07,28.58
+Netherlands,2023,8.44,23.84
+Netherlands,2024,3.1,23.43
+Belgium,2014,3.54,20.49
+Belgium,2015,7.27,26.25
+Belgium,2016,1.91,26.53
+Belgium,2017,5.06,10.03
+Belgium,2018,6.6,25.37
+Belgium,2019,7.84,27.29
+Belgium,2020,8.14,26.86
+Belgium,2021,9.9,12.55
+Belgium,2022,2.68,10.29
+Belgium,2023,1.98,14.93
+Belgium,2024,9.31,18.41
+Sweden,2014,5.12,23.01
+Sweden,2015,7.45,24.42
+Sweden,2016,4.5,24.02
+Sweden,2017,4.72,12.71
+Sweden,2018,4.69,10.87
+Sweden,2019,3.97,28.49
+Sweden,2020,2.16,22.06
+Sweden,2021,9.67,19.05
+Sweden,2022,8.75,14.35
+Sweden,2023,3.69,11.13
+Sweden,2024,1.88,19.82
+Norway,2014,4.75,20.13
+Norway,2015,7.3,12.33
+Norway,2016,7.91,28.7
+Norway,2017,5.35,24.12
+Norway,2018,3.57,24.86
+Norway,2019,4.12,26.56
+Norway,2020,7.93,21.75
+Norway,2021,1.33,24.02
+Norway,2022,3.66,18.56
+Norway,2023,3.66,16.4
+Norway,2024,8.48,13.86
+Switzerland,2014,1.15,20.26
+Switzerland,2015,3.72,12.57
+Switzerland,2016,7.44,15.83
+Switzerland,2017,8.9,25.45
+Switzerland,2018,2.26,23.33
+Switzerland,2019,5.59,15.4
+Switzerland,2020,1.72,22.17
+Switzerland,2021,5.83,29.86
+Switzerland,2022,5.18,10.3
+Switzerland,2023,9.76,20.92
+Switzerland,2024,3.49,28.78
+Austria,2014,8.63,10.99
+Austria,2015,2.78,14.22
+Austria,2016,6.35,16.19
+Austria,2017,2.47,22.1
+Austria,2018,1.66,29.87
+Austria,2019,4.9,11.61
+Austria,2020,6.34,20.3
+Austria,2021,9.89,26.33
+Austria,2022,5.27,28.49
+Austria,2023,7.49,26.72
+Austria,2024,9.59,23.25
+Denmark,2014,5.38,24.13
+Denmark,2015,8.03,26.24
+Denmark,2016,8.36,14.79
+Denmark,2017,7.42,14.86
+Denmark,2018,8.37,13.06
+Denmark,2019,4.67,21.18
+Denmark,2020,2.71,11.92
+Denmark,2021,1.95,10.02
+Denmark,2022,6.14,18.31
+Denmark,2023,4.54,13.28
+Denmark,2024,6.26,14.95
+Finland,2014,3.0,24.28
+Finland,2015,4.84,21.93
+Finland,2016,9.6,13.43
+Finland,2017,1.05,25.82
+Finland,2018,3.99,15.74
+Finland,2019,1.23,18.35
+Finland,2020,7.29,26.01
+Finland,2021,9.17,10.26
+Finland,2022,9.4,16.36
+Finland,2023,6.68,14.28
+Finland,2024,3.77,22.16
+New Zealand,2014,3.22,10.49
+New Zealand,2015,4.29,16.72
+New Zealand,2016,4.75,14.3
+New Zealand,2017,7.46,23.66
+New Zealand,2018,5.8,14.46
+New Zealand,2019,4.29,21.05
+New Zealand,2020,1.29,29.16
+New Zealand,2021,7.0,20.47
+New Zealand,2022,5.58,15.21
+New Zealand,2023,7.0,28.68
+New Zealand,2024,9.2,22.51
+Israel,2014,9.76,28.6
+Israel,2015,2.24,18.49
+Israel,2016,4.22,17.7
+Israel,2017,8.89,13.04
+Israel,2018,4.28,11.11
+Israel,2019,6.09,25.24
+Israel,2020,9.43,15.62
+Israel,2021,4.59,29.01
+Israel,2022,1.34,15.37
+Israel,2023,2.11,18.97
+Israel,2024,2.33,23.68
+South Korea,2014,5.11,21.7
+South Korea,2015,5.5,11.29
+South Korea,2016,1.09,11.55
+South Korea,2017,1.6,16.65
+South Korea,2018,9.76,15.42
+South Korea,2019,3.56,19.61
+South Korea,2020,6.48,13.81
+South Korea,2021,9.12,12.2
+South Korea,2022,4.47,28.99
+South Korea,2023,7.87,24.26
+South Korea,2024,2.66,24.85
+Greece,2014,4.22,22.67
+Greece,2015,6.18,27.13
+Greece,2016,3.92,18.66
+Greece,2017,7.21,22.37
+Greece,2018,6.24,23.0
+Greece,2019,6.34,26.11
+Greece,2020,8.26,24.48
+Greece,2021,5.38,16.6
+Greece,2022,4.94,14.44
+Greece,2023,9.2,22.31
+Greece,2024,9.92,11.92
+Portugal,2014,9.08,24.75
+Portugal,2015,2.04,18.6
+Portugal,2016,8.11,25.33
+Portugal,2017,6.49,26.53
+Portugal,2018,7.82,13.98
+Portugal,2019,9.93,20.78
+Portugal,2020,7.05,12.08
+Portugal,2021,6.08,29.25
+Portugal,2022,1.16,25.91
+Portugal,2023,1.06,19.58
+Portugal,2024,6.62,27.74
+Singapore,2014,9.12,18.86
+Singapore,2015,8.8,11.28
+Singapore,2016,1.97,13.63
+Singapore,2017,8.26,17.2
+Singapore,2018,6.82,21.83
+Singapore,2019,8.85,26.89
+Singapore,2020,1.52,27.42
+Singapore,2021,2.88,22.53
+Singapore,2022,6.41,23.26
+Singapore,2023,8.72,12.92
+Singapore,2024,9.01,29.11

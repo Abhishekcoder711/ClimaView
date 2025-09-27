@@ -1,0 +1,27 @@
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# VSCode settings
+.vscode/
+
+# Environment variables (API keys, DB passwords etc.)
+.env
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore tests folder
+tests/

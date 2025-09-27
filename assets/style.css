@@ -1,0 +1,1211 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* Basic Resets & Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+    height: 100vh;
+    background-image: url("/assets/sky_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Subtle moving background effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/sky_bg.png") repeat-x;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.4;
+    animation: animateSky 300s linear infinite;
+}
+
+@keyframes animateSky {
+    from { background-position-x: 0; }
+    to { background-position-x: -10000px; }
+}
+
+/* Titles & Headings */
+h1, h2, h3, .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.app-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    color: #c8c0c0;
+}
+
+/* Dashboard Wrapper & Containers */
+.dashboard-wrapper {
+    background-color: rgba(106, 145, 176, 0.82);
+    color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.dash-container {
+    background-color: rgba(106, 145, 176, 0.82);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    height: 100vh;
+}
+
+/* Controls Section */
+.dash-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Fix for sidebar input text visibility */
+.sidebar-panel .input,
+.sidebar-panel .Select-value-label,
+.sidebar-panel .Select-placeholder,
+.sidebar-panel .react-select__single-value,
+.sidebar-panel .react-select__placeholder,
+.sidebar-panel .react-select__input input {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.sidebar-panel .Select-control,
+.sidebar-panel .react-select__control,
+.sidebar-panel .Select-menu-outer,
+.sidebar-panel .Select-menu,
+.sidebar-panel .react-select__menu,
+.sidebar-panel .input {
+    background-color: white !important;
+}
+
+/* Text color for selected value within the white background */
+.sidebar-panel .Select-value-label,
+.sidebar-panel .react-select__single-value,
+.sidebar-panel .Select-placeholder,
+.sidebar-panel .react-select__placeholder,
+.sidebar-panel .react-select__input input,
+.sidebar-panel .input {
+    color: #333 !important;
+}
+
+/* Fix for sidebar dropdown control background */
+.sidebar-panel .Select-control,
+.sidebar-panel .react-select__control {
+    background-color: white !important;
+    border: none !important;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 16px;
+}
+
+.input:focus {
+    border: 2px solid #00c3ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 195, 255, 0.7);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown styling */
+.Select-control {
+    background-color: transparent !important;
+    border: 1px solid #483d8b;
+    border-radius: 8px;
+}
+
+/* Dropdown list background color */
+.Select-menu-outer,
+.Select-menu {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Dropdown options color */
+.Select-option {
+    background-color: transparent !important;
+    color: #333 !important;
+}
+
+/* Hover effect on options */
+.Select-option:hover {
+    background-color: rgba(0, 195, 255, 0.1) !important;
+}
+
+/* Text color for the selected value */
+.Select-value-label {
+    color: #072f3a !important;
+}
+
+/* Fix for search/select input text visibility */
+.Select-placeholder,
+.Select-value-label,
+.Select-value,
+.Select-input input,
+.Select-control input,
+.react-select__placeholder,
+.react-select__single-value,
+.react-select__input input,
+.react-select__control input {
+    background-color: rgb(21, 41, 96) !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Buttons */
+.btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.action-button {
+    background-color: #2e3f7d;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    width: auto;
+    max-width: 250px; 
+    border-radius: 0.5rem;
+    margin-top: 0rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #483d8b;
+}
+
+/* Make temperature text readable and keep box fixed size */
+#api-output {
+    color: #052b36 !important; 
+    font-size: 16px;
+    display: flex;
+    min-height: 40px;
+    line-height: 1;
+    padding: 12px 8px;
+    background-color: rgb(177, 205, 235);
+    background-size: 30px;
+    background-position: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+/* This is the new CSS class for the smaller box */
+.temperature-output-box {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Style for the date and time on the dashboard */
+#live-datetime {
+    color: #FFFFFF !important;
+}
+
+/* Download button se related styles hata diye gaye hain, ab wo global_metrics.py me hai */
+/* #download-btn { ... } */
+/* #download-btn::before { ... } */
+/* #download-btn:hover { ... } */
+/* #download-btn:active { ... } */
+
+
+/* Keep small internal actions aligned inside the temp box if present */
+#api-output .action-button {
+    position: left;
+    right: 20px;
+    top: 10px;
+    height: 40px;
+    min-width: 100px;
+    z-index: 61;
+}
+
+/* Ensure wrapper clears floats and acts as positioning context */
+.main-wrapper {
+    position: relative;
+    margin-top: 0;
+}
+
+.main-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* World Map & Data Table */
+#world-map {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.dash-table-container {
+    margin-top: 20px;
+}
+
+/* Data Table Styling */
+.dash-table-container table {
+    background-color: transparent !important;
+}
+
+.dash-table-container .dash-header {
+    background-color: rgba(139, 184, 214, 0.852); 
+    color: #333; 
+    font-weight: bold;
+}
+
+.dash-table-container .dash-cell {
+    background-color: rgba(142, 190, 229, 0.95); 
+    color: #111;
+}
+
+/* Filter inputs */
+.dash-table-container .column-header--filter input {
+    color: #333;
+    background-color: rgba(106, 145, 176, 0.82);
+    border: 1px solid #ccc;
+}
+
+/* AI Tips Sidebar */
+.ai-tips-sidebar {
+    background-color: #1d3b74;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+/* Settings & Sidebar */
+#settings-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+.settings-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.settings-icon {
+    background: transparent;
+    font-size: 20px;
+    border: none !important;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.settings-icon:hover {
+    color: #483d8b !important;
+}
+
+/* Sidebar Panel */
+.sidebar-panel {
+    background: #032d45;
+    padding: 20px;
+    width: 300px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #ddd;
+    max-height: 900vh;
+    overflow-y: auto;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Hamburger Button */
+.menu-icon {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #c6cde3; 
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+    color: #00c3ff;
+    transform: scale(1.1);
+}
+
+.hamburger-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Sidebar labels to white */
+#label-year,
+#label-country,
+#label-city,
+.sidebar-item label {
+    color: white !important;
+}
+
+/* Fix for languages label to white */
+.sidebar-item h3 {
+    color: white !important;
+}
+
+.hamburger-btn:hover {
+    color: #ddd;
+}
+
+/* Services Section Styles (Our Climate Insights) */
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    /* New styles for the whole container */
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-heading {
+    color: #004d40;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.service-block {
+    background-color: #34495e; /* Match the container background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: none; /* Remove box shadow to make it flush with container */
+    flex: 0 0 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #49698c; /* Lighter border for distinction */
+}
+
+.service-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-block i {
+    color: #f1c40f; /* Yellow color for icons */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-block h4 {
+    font-size: 18px;
+    color: #ecf0f1; /* Light text for readability */
+    margin-bottom: 8px;
+}
+
+.service-block p {
+    font-size: 14px;
+    color: #bdc3c7; /* Lighter text for description */
+    margin-bottom: 15px;
+}
+
+.service-block a {
+    font-size: 20px;
+    color: #c3d8ee; /* Yellow color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-block a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    background-color: rgba(206, 233, 255, 0.84);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #272626;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #555;
+}
+
+/* Climate Knowledge Section Styling */
+.climate-knowledge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.knowledge-block {
+    background-color: rgb(142, 167, 199);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex: 1 1 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.knowledge-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.knowledge-block i {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.knowledge-block h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.knowledge-block p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Climate Gallery Styling */
+.climate-gallery-section {
+    background-color: rgb(138, 177, 202);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gallery-heading {
+    font-size: 28px;
+    color: #004d40;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.image-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* New styles for the dedicated info pages */
+.info-container {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #032d45;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+/* ====== Rainfall page styles (for pages/rainfall.py) ====== */
+/* Consolidated rainfall styles: kept single canonical block and removed duplicates. */
+
+.sky{
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Map container card */
+.map-container{
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 14px;
+    background-color: rgba(255,255,255,0.95);
+    color: #0b2a36;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(3,37,63,0.12);
+}
+
+/* Generic section title inside map/details containers */
+.map-container h2,
+.details-section h2,
+.section-title{
+    font-size: 20px;
+    color: #032d45;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Plotly map wrapper (dcc.Graph id) */
+#india-rainfall-map{
+    height: 640px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(3,37,63,0.06);
+    background: #fff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* Details / table card */
+.details-section{
+    max-width: 1100px;
+    margin: 18px auto 60px;
+    padding: 18px;
+    background-color: rgba(255,255,255,0.95);
+    color: #0b2a36;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(3,37,63,0.09);
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+/* Dropdown (state selector) alignment */
+#state-select{
+    min-width: 260px;
+    max-width: 420px;
+}
+
+/* State details box */
+#state-details{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(247,249,250,0.9), rgba(240,244,246,0.9));
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #072f3a;
+    box-shadow: 0 6px 14px rgba(3,37,63,0.06);
+}
+
+/* Rainfall summary table (used by _table_all_states) */
+.rainfall-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.rainfall-table thead tr th{
+    text-align: left;
+    padding: 10px 12px;
+    background: linear-gradient(90deg, rgba(250,250,250,0.95), rgba(240,243,246,0.95));
+    color: #03314a;
+    border-bottom: 2px solid rgba(3,37,63,0.06);
+    font-weight: 700;
+}
+
+.rainfall-table tbody tr td{
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(3,37,63,0.04);
+    color: #073241;
+}
+
+/* Zebra striping for readability */
+.rainfall-table tbody tr:nth-child(odd){
+    background: rgba(245,247,249,0.6);
+}
+
+/* Make numbers right-aligned for readability */
+.rainfall-table tbody tr td:nth-child(2){
+    text-align: right;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px){
+    .map-container, .details-section{
+        margin-left: 12px;
+        margin-right: 12px;
+        padding: 12px;
+    }
+    #india-rainfall-map{ height: 480px !important; }
+    .rainfall-table thead tr th, .rainfall-table tbody tr td{ padding: 8px 10px; }
+}
+
+/* ===== Fix: ensure dropdown (dcc.Dropdown) inside rainfall details shows state names clearly ===== */
+/* Scope to .details-section (where the state-select dropdown lives) and cover both
+       legacy Dash/react-select v1 classnames and react-select v2+ classnames. */
+.details-section .Select-control,
+.details-section .react-select__control {
+    background: #ffffff !important;
+    border: 1px solid rgba(3,37,63,0.08) !important;
+    color: #032d45 !important;
+}
+
+.details-section .Select-value-label,
+.details-section .Select-placeholder,
+.details-section .Select-value,
+.details-section .Select-input input,
+.details-section .react-select__single-value,
+.details-section .react-select__placeholder,
+.details-section .react-select__input input {
+    color: #032d45 !important;
+    opacity: 1 !important;
+}
+
+/* Make the dropdown menu itself readable */
+.details-section .Select-menu-outer,
+.details-section .Select-menu,
+.details-section .react-select__menu {
+    background: #ffffff !important;
+    color: #032d45 !important;
+    border-radius: 8px;
+    border: 1px solid rgba(3,37,63,0.08) !important;
+}
+
+/* Options */
+.details-section .Select-option,
+.details-section .react-select__option {
+    background: transparent !important;
+    color: #032d45 !important;
+    padding: 8px 12px !important;
+}
+
+/* Hover / selected option states */
+.details-section .Select-option.is-selected,
+.details-section .Select-option:hover,
+.details-section .react-select__option--is-focused,
+.details-section .react-select__option--is-selected {
+    background: rgba(3,37,63,0.06) !important;
+    color: #032d45 !important;
+}
+
+/* Override: remove the decorative blue sky band at the top */
+.sky {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* ====== Styles for Live Data Search Sections ====== */
+
+.live-data-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.live-data-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #032d45;
+    margin-bottom: 5px;
+}
+
+.live-data-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-style {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.api-output-box {
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 8px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.api-success {
+    background-color: rgba(220, 255, 220, 0.9);
+    color: #2c5c2c;
+}
+
+.api-error {
+    background-color: rgba(255, 220, 220, 0.9);
+    color: #7d2a2a;
+}
+
+.api-info {
+    background-color: rgba(220, 230, 255, 0.9);
+    color: #2a3a7d;
+}
+
+/* Style for the horizontal line divider */
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+/* ====== Styles for Seasonal and Projections Pages ====== */
+
+.live-season-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #032d45;
+    margin-bottom: 5px;
+}
+
+.live-season-output {
+    font-size: 28px;
+    font-weight: 700;
+    color: #27ae60;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Forecast Cards container */
+.forecast-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.forecast-card {
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    flex: 1 1 150px;
+    max-width: 180px;
+    text-align: center;
+    color: #333;
+}
+
+.forecast-date {
+    font-weight: 600;
+    color: #2e3f7d;
+    margin-bottom: 5px;
+}
+
+.forecast-card p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+/* ====== Styles for the humidity map dropdown fix ====== */
+
+/* Fix: The dropdown control inside the humidity map container needs specific styling
+       to make its text visible on the dark background. */
+
+.humidity-map-container .Select-control,
+.humidity-map-container .react-select__control {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix text, placeholder, and selected value colors */
+.humidity-map-container .Select-value-label,
+.humidity-map-container .Select-placeholder,
+.humidity-map-container .react-select__single-value,
+.humidity-map-container .react-select__placeholder {
+    color: #032d45 !important;
+    opacity: 1 !important;
+}
+
+/* Also fix the dropdown menu itself (the list of options) */
+.humidity-map-container .Select-menu-outer,
+.humidity-map-container .Select-menu,
+.humidity-map-container .react-select__menu {
+    background-color: #fff !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Options */
+.humidity-map-container .Select-option,
+.humidity-map-container .react-select__option {
+    background: transparent !important;
+    color: #032d45 !important;
+    padding: 8px 12px !important;
+}
+
+/* Hover / selected option states */
+.humidity-map-container .Select-option.is-selected,
+.humidity-map-container .Select-option:hover,
+.humidity-map-container .react-select__option--is-focused,
+.humidity-map-container .react-select__option--is-selected {
+    background: rgba(3, 37, 63, 0.05) !important;
+    color: #032d45 !important;
+}
+
+/* Map container specific styles */
+#humidity-map {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 500px !important;
+}
+
+/* Slider styles */
+.rc-slider-track {
+    background-color: #3498db;
+}
+
+.rc-slider-handle {
+    border-color: #3498db;
+}
+
+/* Fix for "Data Table" and "Our Climate Insights" text color */
+/* Our Climate Insights and Global Climate Metrics */
+.services-row h3,
+.global-climate-metrics h3,
+.ai-tips-sidebar h2 {
+    color: #ffffff !important;
+}
+
+/* Data Table */
+.data-table-heading {
+    color: white !important;
+}
+
+/* ======================================================= */
+/* ====== NEW STYLES FOR GLOBAL METRICS PAGE ====== */
+/* ======================================================= */
+
+.global-metrics-page {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.global-metrics-page .app-title,
+.global-metrics-page h2 {
+    color: #032d45;
+}
+
+.global-metrics-page .description {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.global-metrics-page .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.global-metrics-page .dropdown-container label {
+    font-weight: bold;
+    color: #333;
+    display: block; /* Ensure label is a block element */
+    margin-bottom: 5px;
+}
+
+/* Fix for the dropdowns inside the main-content (Global Metrics) */
+.main-content .dropdown-container .Select-control,
+.main-content .dropdown-container .react-select__control {
+    background-color: white !important;
+    border-color: #ccc !important;
+}
+
+.main-content .dropdown-container .Select-value-label,
+.main-content .dropdown-container .react-select__single-value {
+    color: #333 !important;
+}
+
+.global-metrics-page .plotly {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ======================================================= */
+/* ====== NEW STYLES FOR DATA TABLE PAGE ====== */
+/* ======================================================= */
+
+.data-table-page {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.data-table-page .app-title {
+    color: #032d45;
+}
+
+.data-table-page .description {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.data-table-page .selectors-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end; /* Align labels at the bottom */
+    margin-bottom: 25px;
+}
+
+.data-table-page .selectors-row .dropdown-container {
+    flex-grow: 1; /* Allow dropdowns to grow and fill space */
+    min-width: 250px; /* Ensure minimum width for smaller screens */
+    max-width: 400px;
+}
+
+/* यहाँ मैंने लेबल का रंग ठीक किया है */
+.data-table-page .selectors-row label {
+    color: white !important;   /* रंग को #fff (सफेद) में बदल दिया */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* DataTable styling for the Data Table page */
+#data-table-page table {
+    background-color: #f8f9fa !important;
+    border-collapse: collapse;
+}
+
+#data-table-page .dash-header {
+    background-color: #2e3f7d !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+#data-table-page .dash-cell {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333 !important;
+}
+
+#data-table-page .dash-cell-value {
+    color: #333;
+}
+
+/* Filter inputs */
+#data-table-page .column-header--filter input {
+    color: #333 !important;
+    background-color: #e9ecef !important;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Selected value and placeholder text to a readable dark color */
+.data-table-page .Select-value-label,
+.data-table-page .Select-placeholder,
+.data-table-page .react-select__single-value,
+.data-table-page .react-select__placeholder {
+    background-color: white !important ;
+    color: #333 !important;
+}
+
+/* Dropdown control (the box itself) background to white */
+.data-table-page .Select-control,
+.data-table-page .react-select__control {
+    background-color: white !important;
+}
+
+/* Dropdown menu (the list of options) background to white */
+.data-table-page .Select-menu-outer,
+.data-table-page .Select-menu,
+.data-table-page .react-select__menu {
+    background-color: white !important;
+}
+
+/* Options background to transparent, text to dark color */
+.data-table-page .Select-option,
+.data-table-page .react-select__option {
+    background: white !important;
+    color: #333 !important;
+}
+
+/* Hover/focused option background to a light gray for visibility */
+.data-table-page .Select-option:hover,
+.data-table-page .react-select__option--is-focused {
+    background-color: #f0f0f0 !important;
+}
+
+/* "Select Year" dropdown box ka size badhaya gaya hai */
+.year-dropdown .Select-control,
+.year-dropdown .react-select__control {
+    width: 150px; /* Ya koi bhi sahi value jo aapko pasand ho */
+}
+
+/* Update `global_metrics.py` styles to align the download button */
+.global-metrics-page .selectors-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Buttons ko left-aligned kiya */
+    align-items: flex-end; /* Labels aur buttons ko bottom par align kiya */
+    margin-bottom: 25px;
+}
+
+.global-metrics-page .selectors-row .dropdown-container {
+    flex-grow: 0;
+    min-width: 150px; /* "Select Year" ke liye chota width */
+}
+
+/* Download button ko right mein dikhane ke liye flex properties ka upyog */
+.global-metrics-page .button-container {
+    margin-left: auto; /* Button ko right side mein push karta hai */
+}

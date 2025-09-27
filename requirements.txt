@@ -1,0 +1,9 @@
+dash>=2.17.0
+pandas>=2.1.0
+plotly>=5.20.0
+python-dotenv>=1.0.1
+requests>=2.32.0
+
+# For testing purposes and this is not use in actual climate data visualizer application.
+pytest
+pytest-html
