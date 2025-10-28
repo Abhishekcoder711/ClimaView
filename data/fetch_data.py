@@ -3,7 +3,6 @@ import requests
 from dotenv import load_dotenv
 from datetime import datetime
 
-# Load API key from a .env file
 load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 

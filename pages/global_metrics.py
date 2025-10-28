@@ -5,16 +5,13 @@ import dash
 import os
 from dotenv import load_dotenv
 
-# Register the page
 dash.register_page(__name__, path='/global-metrics', name='Global Metrics')
 
-# Load climate data
 df = pd.read_csv("data/climate.csv")
 df["Year"] = df["Year"].astype(int)
 ranked_df = df.copy()
 ranked_df["Rank"] = ranked_df.groupby("Year")["Temperature"].rank(ascending=False)
 
-# Load environment variables
 load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
@@ -25,8 +22,7 @@ layout = html.Div([
     html.H1("Global Climate Metrics", className="app-title"),
 
     html.Hr(style={"borderTop": "2px solid #bbb", "marginTop":"10px", "marginBottom":"20px"}),
-    dcc.Link(html.Button("Go to Dashboard"), href="/dashboard", style={"marginTop":"20px", "background-color":"#2C4057","color":"#2C4057","padding":"10px", "border":"none", "borderRadius":"10px", "cursor":"pointer"}),
-
+    dcc.Link(html.Button("Go to Dashboard", id="to-dashboard", className="action-button"), href="/dashboard", refresh=True),
     html.P("Explore detailed graphs and trends for global climate data.", className="description", style={"color": "white", "fontSize":"22px","marginBottom":"20px", "marginTop":"20px"}), 
     
     html.Div([
