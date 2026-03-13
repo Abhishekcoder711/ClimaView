@@ -11,7 +11,7 @@ API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 # ✅ Flask server
 server = Flask(__name__)
-server.secret_key = "your_secret_key"
+server.secret_key = os.getenv("SECRET_KEY")
 server.wsgi_app = ProxyFix(server.wsgi_app)
 
 # ✅ External stylesheets: Bootstrap + Font Awesome
@@ -39,4 +39,5 @@ def privacy_policy():
     return render_template("privacy_policy.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
