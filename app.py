@@ -28,6 +28,30 @@ app = dash.Dash(
     external_stylesheets=external_stylesheets
 )
 
+app.index_string = """
+<!DOCTYPE html>
+<html>
+<head>
+{%metas%}
+<title>ClimaView</title>
+{%favicon%}
+{%css%}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1256249325677007"
+crossorigin="anonymous"></script>
+
+</head>
+<body>
+{%app_entry%}
+<footer>
+{%config%}
+{%scripts%}
+{%renderer%}
+</footer>
+</body>
+</html>
+"""
+
 # ✅ App layout
 app.layout = html.Div([
     dash.page_container
