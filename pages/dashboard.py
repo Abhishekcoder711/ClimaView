@@ -112,9 +112,9 @@ def create_footer_layout(languages_data):
         
         # NOTE: Font Awesome or similar library is required for these icons to display
         html.Div([
-            html.A(html.I(className="fab fa-facebook-f"), href="#", target="_blank", className="social-icon"),
-            html.A(html.I(className="fab fa-twitter"), href="#", target="_blank", className="social-icon"),
-            html.A(html.I(className="fab fa-linkedin-in"), href="#", target="_blank", className="social-icon"),
+            html.A(html.I(className="fab fa-facebook-f"), href="https://www.facebook.com/profile.php?id=61579899857084", target="_blank", className="social-icon"),
+            html.A(html.I(className="fab fa-twitter"), href="https://twitter.com/Abhimishra_22", target="_blank", className="social-icon"),
+            html.A(html.I(className="fab fa-linkedin-in"), href="https://www.linkedin.com/in/abhishek-kumar-mishra6/", target="_blank", className="social-icon"),
         ], className="footer-social-container"),
         
         html.P(

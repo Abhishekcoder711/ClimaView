@@ -45,18 +45,24 @@ layout = html.Div(className="about-layout-wrapper", children=[
                     dbc.Card(className="team-member-card", children=[
                         html.H4("Abhishek Kumar Mishra"),
                         html.P("Data Analyst & Backend Architect"),
+                        html.P(""),
+                        html.P("Abhishek is responsible for data collection, processing, and ensuring the integrity of our climate datasets. With a background in data science, he designs the backend architecture that powers our visualizations. His expertise ensures that our users receive accurate and up-to-date climate information."),
                     ]),
                 ]),
                 dbc.Col(md=4, children=[
                     dbc.Card(className="team-member-card", children=[
-                        html.H4("Akhil"),
+                        html.H4("Akhil Bhushan"),
                         html.P("UI/UX Design Lead & Front-End Integrator"),
+                        html.P(""),
+                        html.P("Akhil leads the design and user experience of ClimaView. He creates intuitive interfaces and ensures that our visualizations are not only informative but also engaging. His work focuses on making complex climate data accessible to users of all backgrounds."),
                     ]),
                 ]),
                 dbc.Col(md=4, children=[
                     dbc.Card(className="team-member-card", children=[
-                        html.H4("Seeram"),
+                        html.H4("Seeram Pavani"),
                         html.P("Front-End Developer & Visualization Specialist"),
+                        html.P(""),
+                        html.P("Seeram is responsible for implementing the front-end components of ClimaView. He specializes in creating dynamic and interactive visualizations that bring climate data to life. His work ensures that users can explore and understand climate trends through engaging visual representations."),
                     ]),
                 ]),
             ]),

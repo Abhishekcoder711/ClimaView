@@ -18,18 +18,19 @@ layout = dbc.Container(
                             
                             html.Div([
                                 html.I(className="fas fa-envelope contact-icon"),
-                                html.A("support@climateview.com", href="mailto:support@climateview.com", className="contact-link")
+                                html.A("abhishekind711@gmail.com", href="mailto:abhishekind711@gmail.com", className="contact-link")
                             ], className="contact-item"),
 
                             html.Div([
                                 html.I(className="fas fa-phone contact-icon"),
-                                html.Span("+1 (555) 123-4567", className="contact-link")
+                                html.Span("Available on request via email", className="contact-link")
                             ], className="contact-item"),
 
                             html.Div([
                                 html.I(className="fas fa-map-marker-alt contact-icon"),
-                                html.Span("123 Mohali, Punjab, INDIA", className="contact-link")
+                                html.Span("Mohali, Punjab, INDIA", className="contact-link")
                             ], className="contact-item"),
+                            html.P("Feel free to reach out with any questions, feedback, or collaboration opportunities. We're here to help and look forward to connecting with you!", className="mt-3")
                         ])
                     ),
                     md=6,
