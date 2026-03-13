@@ -4,7 +4,6 @@ plotly>=5.20.0
 python-dotenv>=1.0.1
 requests>=2.32.0
 gunicorn>=20.1.0
-Flask>=2.3.0
 
 # For testing purposes and this is not use in actual climate data visualizer application.
 pytest
