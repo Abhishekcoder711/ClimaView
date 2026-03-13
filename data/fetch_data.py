@@ -7,15 +7,13 @@ load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 # --- Function to get real-time temperature (from original dashboard.py) ---
-import requests
-import os
 
 def get_real_time_temperature(city):
     API_KEY = os.getenv("OPENWEATHER_API_KEY")
     if not API_KEY:
         return "Error: API key not found in environment variables."
 
-    base_url = "http://api.openweathermap.org/data/2.5/weather?"
+    base_url = "https://api.openweathermap.org/data/2.5/weather?"
     complete_url = f"{base_url}q={city}&appid={API_KEY}&units=metric"
     
     try:
@@ -35,13 +33,13 @@ def get_real_time_temperature(city):
 # --- Function to get all real-time weather data for a single city ---
 # This is the function used in humidity.py, rainfall.py, wind.py and seasonal.py
 def get_real_time_weather_data(city):
-    base_url = "http://api.openweathermap.org/data/2.5/weather?"
+    base_url = "https://api.openweathermap.org/data/2.5/weather?"
     try:
         if not API_KEY:
             return {"error": "API Key not found. Please check your .env file."}
 
         url = f"{base_url}q={city}&appid={API_KEY}&units=metric"
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()  # Raise an exception for HTTP errors
         data = response.json()
         
@@ -78,13 +76,13 @@ def get_real_time_weather_data(city):
 # This function is used in projection.py
 def get_5_day_forecast_data(city):
     """Fetches a 5-day, 3-hour forecast for a given city."""
-    base_url = "http://api.openweathermap.org/data/2.5/forecast?"
+    base_url = "https://api.openweathermap.org/data/2.5/forecast?"
     try:
         if not API_KEY:
             return {"error": "API Key not found. Please check your .env file."}
 
         url = f"{base_url}q={city}&appid={API_KEY}&units=metric"
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         response.raise_for_status() # Raise an exception for HTTP errors
         data = response.json()
         

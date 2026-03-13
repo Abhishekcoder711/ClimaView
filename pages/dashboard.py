@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import datetime
 import os
-from dotenv import load_dotenv
 from data.fetch_data import get_real_time_temperature 
 import dash_bootstrap_components as dbc
 import random

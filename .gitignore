@@ -25,3 +25,7 @@ Thumbs.db
 
 # Ignore tests folder
 tests/
+
+build/
+dist/
+*.egg-info/
