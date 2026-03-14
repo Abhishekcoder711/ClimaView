@@ -39,7 +39,7 @@ layout = dbc.Container(
                 dbc.Col(
                     dbc.Card(
                         dbc.CardBody([
-                            html.H2("Send us a Message", className="card-title"),
+                            html.H2("Request for Service", className="card-title"),
                             dbc.Form([
                                 html.Div([
                                     html.Label("Name", htmlFor="contact-name", className="form-label"),

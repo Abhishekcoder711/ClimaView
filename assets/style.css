@@ -1640,3 +1640,21 @@ h1, h2, h3, .form-title {
   color: #495057;
   margin-bottom: 1rem;
 }
+
+
+.social-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.social-link i {
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    color: #0d6efd;
+}
