@@ -33,7 +33,33 @@ app.index_string = """
 <html>
 <head>
 {%metas%}
-<title>ClimaView</title>
+<title>ClimaView - Climate Data Visualization Dashboard</title>
+
+<meta name="description" content="ClimaView is an interactive climate data visualization dashboard to explore temperature, rainfall, humidity, wind, and global climate metrics." />
+
+<meta name="keywords" content="climate data dashboard, weather analytics, climate visualization, temperature trends, rainfall data, climate insights" />
+
+<meta name="author" content="Abhishek Kumar Mishra">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://climaview-vc1d.onrender.com">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="ClimaView - Climate Data Visualization Dashboard">
+<meta property="og:description" content="Explore climate data insights including temperature, rainfall, humidity and wind trends through interactive visualizations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://climaview-vc1d.onrender.com">
+<meta property="og:image" content="https://climaview-vc1d.onrender.com/assets/earth_atmosphere.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClimaView Climate Dashboard">
+<meta name="twitter:description" content="Interactive dashboard to explore climate data trends and weather insights.">
+<meta name="twitter:image" content="https://climaview-vc1d.onrender.com/assets/earth_atmosphere.png">
+
+<meta name="theme-color" content="#0a2540">
+
 {%favicon%}
 {%css%}
 
