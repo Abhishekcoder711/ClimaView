@@ -1,7 +1,6 @@
 # 🌍 Climate-Data-Visualizer (ClimaView)
 
 Let's Try-->https://clima-view-sigma.vercel.app
----
 
 A comprehensive, interactive web application built to visualize and analyze various global climate metrics, projections, and historical data. This tool aims to make climate science data accessible and understandable for researchers, policymakers, and the general public.
 
