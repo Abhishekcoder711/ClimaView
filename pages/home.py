@@ -67,20 +67,62 @@ climate_images = [
         'caption': 'Car Pollution'
     }
 ]
+
+def create_footer_layout(languages_data):
+    import datetime
+    return html.Div([
+        html.Div([
+            html.A("About Us", href="/about", className="footer-link"),
+            html.Span("|", className="footer-separator"),
+            html.A("Contact", href="/contact", className="footer-link"),
+            html.Span("|", className="footer-separator"),
+            html.A("Privacy Policy", href="/privacy", className="footer-link"),
+        ], className="footer-links-container"),
+
+        html.Div([
+            html.A(html.I(className="fab fa-facebook-f"), href="#", target="_blank", className="social-icon"),
+            html.A(html.I(className="fab fa-twitter"), href="#", target="_blank", className="social-icon"),
+            html.A(html.I(className="fab fa-linkedin-in"), href="#", target="_blank", className="social-icon"),
+        ], className="footer-social-container"),
+
+        html.P(
+            f"© Copyright {datetime.datetime.now().year} ClimaView. All rights reserved.",
+            className="copyright-text"
+        )
+    ], className="footer-section")
+
+
 # Page layout
 layout = html.Div([
     html.Div(className="sky"),
     html.Div([
-        html.Div(id="live-datetime", style={"position": "absolute", "top": "15px", "right": "15px", "fontSize": "12px", "color": "#fff"}),
+
+        # 👇 Navbar (Navigation + Time)
+        html.Div([
+
+            # Left: Navigation
+            html.Div([
+                dcc.Link("Home", href="/", style={"marginRight": "40px", "color": "white", "textDecoration": "none", "fontWeight": "500"}),
+                dcc.Link("Dashboard", href="/dashboard", style={"marginRight": "40px", "color": "white", "textDecoration": "none", "fontWeight": "500"}),
+                dcc.Link("About", href="/about", style={"marginRight": "40px", "color": "white", "textDecoration": "none", "fontWeight": "500"}),
+                dcc.Link("Contact", href="/contact", style={"marginRight": "40px", "color": "white", "textDecoration": "none", "fontWeight": "500"}),
+                dcc.Link("Privacy", href="/privacy", style={"marginRight": "40px", "color": "white", "textDecoration": "none", "fontWeight": "500"}),
+            ]),
+
+            # Right: Time
+            html.Div(id="live-datetime", style={"fontSize": "12px", "color": "#fff"})
+
+        ], style={
+            "display": "flex",
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "padding": "10px 20px",
+            "background": "rgba(0,0,0,0.4)",
+            "backdropFilter": "blur(5px)"
+        }),
         dcc.Interval(id="interval-clock", interval=1000, n_intervals=0),
 
-        # 👇 Navigation (NEW)
-        html.Div([
-            dcc.Link("Home", href="/", style={"margin": "10px"}),
-            dcc.Link("About", href="/about", style={"margin": "10px"}),
-            dcc.Link("Contact", href="/contact", style={"margin": "10px"}),
-            dcc.Link("Privacy", href="/privacy", style={"margin": "10px"}),
-        ], style={"textAlign": "center", "marginTop": "10px"}),
+
 
         html.H1("Welcome to Climate Data Visualizer", style={"textAlign": "center", "color": "rgb(14, 30, 51)", "marginTop": "40px"}),
         html.H2("ClimaView", style={"textAlign": "center", "fontSize": "28px", "color": "#2C4057", "fontfamily": "Bold", "marginTop": "10px"}),
@@ -157,7 +199,15 @@ layout = html.Div([
             html.P("The platform simplifies complex datasets into easy-to-understand charts, making it useful for students, researchers, and analysts. It also raises awareness about climate change and supports data-driven decision making."),
 
         html.Hr()
-        ])
+        ],style={   
+                "background": "rgba(255,255,255,0.9)",
+                "padding": "30px",
+                "Width": "100px",
+                "margin": "40px 0",
+                "borderRadius": "12px",
+                "boxShadow": "0 4px 20px rgba(0,0,0,0.1)",
+                "textAlign": "center"}),
+        create_footer_layout({"EN": {"title": "ClimaView"}})        
     ], className="main-wrapper")
 ])
 

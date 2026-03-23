@@ -89,9 +89,6 @@ app.layout = html.Div([
 def privacy_policy():
     return render_template("privacy_policy.html")
 
-@server.route("/about")
-def about():
-    return render_template("about.html")
 
 @server.route('/ads.txt')
 def ads_txt():
