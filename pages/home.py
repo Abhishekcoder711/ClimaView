@@ -74,6 +74,14 @@ layout = html.Div([
         html.Div(id="live-datetime", style={"position": "absolute", "top": "15px", "right": "15px", "fontSize": "12px", "color": "#fff"}),
         dcc.Interval(id="interval-clock", interval=1000, n_intervals=0),
 
+        # 👇 Navigation (NEW)
+        html.Div([
+            dcc.Link("Home", href="/", style={"margin": "10px"}),
+            dcc.Link("About", href="/about", style={"margin": "10px"}),
+            dcc.Link("Contact", href="/contact", style={"margin": "10px"}),
+            dcc.Link("Privacy", href="/privacy", style={"margin": "10px"}),
+        ], style={"textAlign": "center", "marginTop": "10px"}),
+
         html.H1("Welcome to Climate Data Visualizer", style={"textAlign": "center", "color": "rgb(14, 30, 51)", "marginTop": "40px"}),
         html.H2("ClimaView", style={"textAlign": "center", "fontSize": "28px", "color": "#2C4057", "fontfamily": "Bold", "marginTop": "10px"}),
         html.P("!!Explore weather patterns, climate trends, and more!!", style={"textAlign": "center", "fontSize": "20px", "marginTop": "20px", "color": "#1d2f4a"}),
@@ -138,6 +146,18 @@ layout = html.Div([
         ], className="climate-gallery-section"),
 
         html.Hr(style={'margin-top': '40px', 'margin-bottom': '40px'}),
+
+        html.Div([
+            html.H2("Understanding Climate Data and Its Importance"),
+
+            html.P("Climate data helps us understand environmental changes and predict future trends. Rising temperatures, changing rainfall patterns, and extreme weather events are key indicators of climate change."),
+
+            html.P("ClimaView allows users to explore climate parameters such as temperature, rainfall, humidity, and wind through interactive visualizations. This helps in identifying seasonal patterns and long-term climate behavior."),
+
+            html.P("The platform simplifies complex datasets into easy-to-understand charts, making it useful for students, researchers, and analysts. It also raises awareness about climate change and supports data-driven decision making."),
+
+        html.Hr()
+        ])
     ], className="main-wrapper")
 ])
 

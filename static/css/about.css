@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0a2540;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}

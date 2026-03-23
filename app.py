@@ -4,6 +4,7 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 import os
 from flask import Flask, render_template
+from flask import send_from_directory
 
 load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
@@ -59,6 +60,7 @@ app.index_string = """
 <meta name="twitter:image" content="https://climaview-vc1d.onrender.com/assets/earth_atmosphere.png">
 
 <meta name="theme-color" content="#0a2540">
+<meta name="google-adsense-account" content="ca-pub-1256249325677007">
 
 {%favicon%}
 {%css%}
@@ -86,6 +88,14 @@ app.layout = html.Div([
 @server.route("/privacy")
 def privacy_policy():
     return render_template("privacy_policy.html")
+
+@server.route("/about")
+def about():
+    return render_template("about.html")
+
+@server.route('/ads.txt')
+def ads_txt():
+    return send_from_directory('.', 'ads.txt')
 
 if __name__ == "__main__":
     app.run(debug=False)
