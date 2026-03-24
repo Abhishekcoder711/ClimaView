@@ -83,6 +83,7 @@ crossorigin="anonymous"></script>
 </script>
 <footer>
 {%config%}
+{%scripts%}
 {%renderer%}
 </footer>
 </body>
