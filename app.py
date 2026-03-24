@@ -71,9 +71,18 @@ crossorigin="anonymous"></script>
 </head>
 <body>
 {%app_entry%}
+<!-- ClimaView-Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1256249325677007"
+     data-ad-slot="9501225380"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <footer>
 {%config%}
-{%scripts%}
 {%renderer%}
 </footer>
 </body>
