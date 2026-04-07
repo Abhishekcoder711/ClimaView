@@ -68,19 +68,15 @@ app.index_string = """
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1256249325677007"
 crossorigin="anonymous"></script>
 
+<script charset="UTF-8" src="//web.webpushs.com/js/push/22a463ae4152985a4fa99e06831dc5ee_1.js" async></script>
+
 </head>
+
+
+
 <body>
 {%app_entry%}
-<!-- ClimaView-Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1256249325677007"
-     data-ad-slot="9501225380"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <footer>
 {%config%}
 {%scripts%}
