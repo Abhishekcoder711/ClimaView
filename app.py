@@ -78,7 +78,7 @@ crossorigin="anonymous"></script>
     })(window, document, "clarity", "script", "w953vp4znl");
 </script>
 
-google-site-verification: googlefb8b8accabe10c91.html
+<meta name="google-site-verification" content="UWdsA_DMIv38d8kukJTGv8LB4nEpkGMjHhePYltI7_c" />
 
 </head>
 
