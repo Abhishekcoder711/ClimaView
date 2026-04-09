@@ -110,5 +110,9 @@ def privacy_policy():
 def ads_txt():
     return send_from_directory('.', 'ads.txt')
 
+@server.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
+
 if __name__ == "__main__":
     app.run(debug=False)
