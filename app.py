@@ -44,16 +44,6 @@ app.index_string = """
   gtag('config', 'G-CQEZ0CMY4P');
 </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J919KM70K4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J919KM70K4');
-</script>
-
 {%metas%}
 <title>ClimaView - Climate Data Visualization Dashboard</title>
 
